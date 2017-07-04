@@ -1,0 +1,49 @@
+html{
+  body{
+    header{
+      background-color: $blue;
+      text-align: center;
+      color: white;
+
+
+      .headerelement {
+        display: inline-block;
+        text-align: center;
+        margin: 30px;
+        vertical-align: top;
+
+        #vivamus {
+
+          width: auto;
+          height: 120px;
+        }
+        .item {
+          font-family: Garamond;
+          display: inline-block;
+          font-size: 2rem;
+        }
+
+
+      }
+      .headerelement.menuitems {
+        position: relative;
+        top: 15px;
+      }
+      #searchbox {
+        font-size: 1rem;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+        width: 120%;
+        height: 40px;
+        background-color: $blue;
+        background-image: url("../../img/magnify.png");
+        background-repeat: no-repeat;
+        background-position: right;
+
+      }
+
+    }
+  }
+
+}
