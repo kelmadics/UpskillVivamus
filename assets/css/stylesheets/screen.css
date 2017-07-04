@@ -111,6 +111,41 @@ html body header #searchbox {
   background-position: right;
 }
 
+/* line 3, ../sass/_footer.scss */
+html body footer {
+  background-color: #BEBEBE;
+  padding: 20px;
+}
+/* line 7, ../sass/_footer.scss */
+html body footer #ftrcontainerone {
+  text-align: center;
+}
+/* line 10, ../sass/_footer.scss */
+html body footer #ftrcontainerone .circleelement {
+  display: inline-block;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  margin: 0 15px 0 15px;
+}
+/* line 19, ../sass/_footer.scss */
+html body footer #ftrcontainertwo {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin: 15px 0 15px 0;
+}
+/* line 25, ../sass/_footer.scss */
+html body footer #ftrcontainertwo .footermenu {
+  display: inline-block;
+}
+/* line 29, ../sass/_footer.scss */
+html body footer #ftrcontainerthree {
+  text-align: center;
+  color: white;
+}
+
 /* line 18, ../sass/screen.scss */
 body {
   font-size: 100%;
