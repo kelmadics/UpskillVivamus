@@ -1,12 +1,11 @@
 @mixin formformat {
 
   position: relative;
-  margin: 0 20% 0 20%;
+  margin: 0 20% 30px 20%;
   text-align: left;
   background-color: $lightgrey;
   border-radius: 10px;
   padding: 30px;
-  margin-bottom: 30px;
   color: $blue;
   font-size: 2rem;
 }
@@ -30,6 +29,7 @@
   font-size: 2rem;
   color: $blue;
   background-color: white;
+  cursor: pointer;
 }
 
 @mixin tabcontent{
@@ -38,4 +38,19 @@
   border-radius: 0 0 10px 10px;
   padding: 15px 30px 15px 30px;
   font-size: 1.3rem;
+}
+
+@mixin button {
+  display: inline-block;
+  font-size: 2rem;
+  height: 70px;
+  width: 250px;
+  background-color: $blue;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+
 }

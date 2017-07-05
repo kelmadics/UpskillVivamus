@@ -145,12 +145,11 @@ html body main #maincontainertwo #stepline {
 /* line 78, ../sass/_main.scss */
 html body main section #sectionone {
   position: relative;
-  margin: 0 20% 0 20%;
+  margin: 0 20% 30px 20%;
   text-align: left;
   background-color: #EBEBEB;
   border-radius: 10px;
   padding: 30px;
-  margin-bottom: 30px;
   color: #2DA8C9;
   font-size: 2rem;
 }
@@ -219,29 +218,28 @@ html body main section #sectionone #formone .boxname {
   text-indent: 10px;
   font-size: 1.1rem;
 }
-/* line 121, ../sass/_main.scss */
+/* line 119, ../sass/_main.scss */
 html body main section #sectiontwo {
   position: relative;
-  margin: 0 20% 0 20%;
+  margin: 0 20% 30px 20%;
   text-align: left;
   background-color: #EBEBEB;
   border-radius: 10px;
   padding: 30px;
-  margin-bottom: 30px;
   color: #2DA8C9;
   font-size: 2rem;
 }
-/* line 123, ../sass/_main.scss */
+/* line 121, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo {
   margin-top: 30px;
   padding: 10px 20px 10px 20px;
   font-size: 1rem;
 }
-/* line 129, ../sass/_main.scss */
+/* line 127, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabmenu {
   text-align: center;
 }
-/* line 132, ../sass/_main.scss */
+/* line 130, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabmenu #paypal {
   display: inline-block;
   height: 50px;
@@ -251,13 +249,14 @@ html body main section #sectiontwo #formtwo #tabmenu #paypal {
   font-size: 2rem;
   color: #2DA8C9;
   background-color: white;
+  cursor: pointer;
   float: left;
   background-color: #2DA8C9;
   /*TEMPORARY: UNTIL JAVA SCRIPT/JQUERY*/
   color: white;
   /*TEMPORARY: UNTIL JAVA SCRIPT/JQUERY*/
 }
-/* line 138, ../sass/_main.scss */
+/* line 136, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabmenu #creditcard {
   display: inline-block;
   height: 50px;
@@ -267,9 +266,10 @@ html body main section #sectiontwo #formtwo #tabmenu #creditcard {
   font-size: 2rem;
   color: #2DA8C9;
   background-color: white;
+  cursor: pointer;
   float: right;
 }
-/* line 143, ../sass/_main.scss */
+/* line 141, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard {
   display: block;
   background-color: white;
@@ -279,7 +279,7 @@ html body main section #sectiontwo #formtwo #tabcontentcreditcard {
   clear: both;
   position: relative;
 }
-/* line 148, ../sass/_main.scss */
+/* line 146, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard #visalogo {
   position: absolute;
   right: 20px;
@@ -288,11 +288,11 @@ html body main section #sectiontwo #formtwo #tabcontentcreditcard #visalogo {
   height: 70px;
   width: auto;
 }
-/* line 157, ../sass/_main.scss */
+/* line 155, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard .tabinputname {
   text-indent: 10px;
 }
-/* line 161, ../sass/_main.scss */
+/* line 159, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard #amount {
   border-radius: 10px;
   border: transparent;
@@ -303,7 +303,7 @@ html body main section #sectiontwo #formtwo #tabcontentcreditcard #amount {
   display: block;
   background-color: #EBEBEB;
 }
-/* line 166, ../sass/_main.scss */
+/* line 164, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard #holdername {
   border-radius: 10px;
   border: transparent;
@@ -315,7 +315,7 @@ html body main section #sectiontwo #formtwo #tabcontentcreditcard #holdername {
   background-color: #EBEBEB;
   width: 97%;
 }
-/* line 172, ../sass/_main.scss */
+/* line 170, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard #cardnum {
   border-radius: 10px;
   border: transparent;
@@ -327,7 +327,7 @@ html body main section #sectiontwo #formtwo #tabcontentcreditcard #cardnum {
   background-color: #EBEBEB;
   width: 97%;
 }
-/* line 178, ../sass/_main.scss */
+/* line 176, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard #cardcode {
   border-radius: 10px;
   border: transparent;
@@ -338,7 +338,7 @@ html body main section #sectiontwo #formtwo #tabcontentcreditcard #cardcode {
   display: block;
   background-color: #EBEBEB;
 }
-/* line 183, ../sass/_main.scss */
+/* line 181, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentcreditcard #expiry {
   border-radius: 10px;
   border: transparent;
@@ -349,7 +349,7 @@ html body main section #sectiontwo #formtwo #tabcontentcreditcard #expiry {
   display: block;
   background-color: #EBEBEB;
 }
-/* line 193, ../sass/_main.scss */
+/* line 191, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentpaypal {
   display: block;
   background-color: white;
@@ -360,20 +360,20 @@ html body main section #sectiontwo #formtwo #tabcontentpaypal {
   position: relative;
   background-color: black;
 }
-/* line 199, ../sass/_main.scss */
+/* line 197, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentpaypal #paypallogo {
   position: absolute;
-  right: 20px;
+  right: 25px;
   bottom: 20px;
   background-repeat: no-repeat;
-  height: 70px;
+  height: 60px;
   width: auto;
 }
-/* line 208, ../sass/_main.scss */
+/* line 206, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentpaypal .tabinputname {
   text-indent: 10px;
 }
-/* line 212, ../sass/_main.scss */
+/* line 210, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentpaypal #paypalemail {
   border-radius: 10px;
   border: transparent;
@@ -384,7 +384,7 @@ html body main section #sectiontwo #formtwo #tabcontentpaypal #paypalemail {
   display: block;
   background-color: #EBEBEB;
 }
-/* line 217, ../sass/_main.scss */
+/* line 215, ../sass/_main.scss */
 html body main section #sectiontwo #formtwo #tabcontentpaypal #paypalpassword {
   border-radius: 10px;
   border: transparent;
@@ -394,6 +394,81 @@ html body main section #sectiontwo #formtwo #tabcontentpaypal #paypalpassword {
   margin: 5px 10px 10px 0;
   display: block;
   background-color: #EBEBEB;
+}
+/* line 226, ../sass/_main.scss */
+html body main section #sectionthree #formthree {
+  position: relative;
+  margin: 0 20% 30px 20%;
+  text-align: left;
+  background-color: #EBEBEB;
+  border-radius: 10px;
+  padding: 30px;
+  color: #2DA8C9;
+  font-size: 2rem;
+}
+/* line 229, ../sass/_main.scss */
+html body main section #sectionthree #formthree #commentboxname {
+  margin-top: 30px;
+  text-indent: 10px;
+  font-size: 1.3rem;
+}
+/* line 234, ../sass/_main.scss */
+html body main section #sectionthree #formthree #commentfield {
+  background-color: white;
+  border-radius: 10px;
+  border: transparent;
+  padding: 20px;
+  width: 95%;
+  height: 200px;
+  margin: 5px auto 0 auto;
+  text-align: justify;
+  font-size: 1rem;
+}
+/* line 245, ../sass/_main.scss */
+html body main section #sectionthree #formthree #checkboxcontainer {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  position: relative;
+  text-indent: 10px;
+}
+/* line 251, ../sass/_main.scss */
+html body main section #sectionthree #formthree #checkboxcontainer #checkboxone {
+  margin-top: 20px;
+  text-indent: 20px;
+}
+/* line 265, ../sass/_main.scss */
+html body main #buttonarea {
+  position: relative;
+  margin: 0 20% 30px 20%;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+/* line 275, ../sass/_main.scss */
+html body main #buttonarea #btn1 {
+  display: inline-block;
+  font-size: 2rem;
+  height: 70px;
+  width: 250px;
+  background-color: #2DA8C9;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 22%;
+}
+/* line 281, ../sass/_main.scss */
+html body main #buttonarea #btn2 {
+  display: inline-block;
+  font-size: 2rem;
+  height: 70px;
+  width: 250px;
+  background-color: #2DA8C9;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 22%;
 }
 
 /* line 3, ../sass/_header.scss */

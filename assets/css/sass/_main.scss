@@ -116,8 +116,6 @@ html{
             }
           }
         }
-
-
         #sectiontwo{
           @include formformat();
           #formtwo{
@@ -198,10 +196,10 @@ html{
 
               #paypallogo{
                 position: absolute;
-                right: 20px;
+                right: 25px;
                 bottom: 20px;
                 background-repeat: no-repeat;
-                height: 70px;
+                height: 60px;
                 width: auto;
               }
 
@@ -220,16 +218,75 @@ html{
 
 
               }
-
-
-
-
             }
 
           }
         }
+        #sectionthree{
+          #formthree{
+            @include formformat();
 
+            #commentboxname{
+              margin-top: 30px;
+              text-indent: 10px;
+              font-size: 1.3rem;
+            }
+            #commentfield{
+              background-color: white;
+              border-radius: 10px;
+              border: transparent;
+              padding: 20px;
+              width: 95%;
+              height: 200px;
+              margin: 5px auto 0 auto;
+              text-align: justify;
+              font-size: 1rem;
+            }
+            #checkboxcontainer{
+              font-size: 1.3rem;
+              vertical-align: middle;
+              position: relative;
+              text-indent: 10px;
+
+              #checkboxone{
+                margin-top: 20px;
+                text-indent: 20px;
+              }
+
+
+            }
+
+
+          }
+
+        }
       }
+
+      #buttonarea{
+
+
+        position: relative;
+        margin: 0 20% 30px 20%;
+
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+
+        #btn1{
+          @include button();
+          margin-right: 22%;
+
+
+        }
+        #btn2{
+          @include button();
+          margin-left: 22% ;
+        }
+
+    }
+
+
+
 
     }
   }
