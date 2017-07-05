@@ -75,49 +75,160 @@ html{
       }
 
       section{
-        #formone{
+        #sectionone{
           @include formformat();
-
-          #innercontainertwo {
+          #formone{
+            margin-top: 10px;
+            padding: 10px;
             font-size: 1rem;
 
-            #inputboxname{
-              margin: 0 0 0 20px;
 
-
-
+            #boxone{
+              float: left;
 
               #firstname{
                 @include inputbox();
-                width: 30%;
               }
+            }
+            #boxtwo{
+              float: right;
+
               #lastname{
                 @include inputbox();
-                width: 30%;
-
               }
+            }
+            #boxthree{
+              clear: both;
+
               #email{
                 @include inputbox();
-                clear: both;
-                width: 95%;
+                width: 96%;
               }
-              #mobilenumber{
+              #number{
                 @include inputbox();
-                width: 95%;
+                width: 96%;
+
               }
-
             }
-
-
+            .boxname{
+              text-indent: 10px;
+              font-size: 1.1rem;
+            }
           }
         }
 
 
-
-        #formtwo{
-
+        #sectiontwo{
           @include formformat();
+          #formtwo{
+            margin-top: 30px;
+            padding: 10px 20px 10px 20px;
+            font-size: 1rem;
+
+
+            #tabmenu{
+              text-align: center;
+
+              #paypal{
+                @include tabbtn();
+                float: left;
+                background-color: $blue;  /*TEMPORARY: UNTIL JAVA SCRIPT/JQUERY*/
+                color: white;             /*TEMPORARY: UNTIL JAVA SCRIPT/JQUERY*/
+              }
+              #creditcard{
+                @include tabbtn();
+                float: right;
+              }
+            }
+            #tabcontentcreditcard{
+              @include tabcontent();
+              clear: both;
+              position: relative;
+
+              #visalogo{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                background-repeat: no-repeat;
+                height: 70px;
+                width: auto;
+              }
+
+              .tabinputname{
+                text-indent: 10px;
+              }
+
+              #amount{
+                @include inputbox();
+                background-color: $lightgrey;
+
+              }
+              #holdername{
+                @include inputbox();
+                background-color: $lightgrey;
+                width: 97%;
+
+              }
+              #cardnum{
+                @include inputbox();
+                background-color: $lightgrey;
+                width: 97%;
+
+              }
+              #cardcode{
+                @include inputbox();
+                background-color: $lightgrey;
+
+              }
+              #expiry{
+                @include inputbox();
+                background-color: $lightgrey;
+
+              }
+
+
+
+            }
+
+            #tabcontentpaypal{
+              @include tabcontent();
+              clear: both;
+              position: relative;
+              background-color: black;
+
+              #paypallogo{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                background-repeat: no-repeat;
+                height: 70px;
+                width: auto;
+              }
+
+              .tabinputname{
+                text-indent: 10px;
+              }
+
+              #paypalemail{
+                @include inputbox();
+                background-color: $lightgrey;
+
+              }
+              #paypalpassword{
+                @include inputbox();
+                background-color: $lightgrey;
+
+
+              }
+
+
+
+
+            }
+
+          }
         }
+
       }
 
     }

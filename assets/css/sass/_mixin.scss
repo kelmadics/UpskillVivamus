@@ -17,7 +17,25 @@
   height: 50px;
   padding: 0 10px 0 10px;
   font-size: 1.5rem;
+  margin: 5px 10px 10px 0;
   display: block;
-  margin: 0 10px 10px 0;
+}
 
+@mixin tabbtn {
+  display: inline-block;
+  height: 50px;
+  width: 50%;
+  border: transparent;
+  border-radius: 10px 10px 0 0;
+  font-size: 2rem;
+  color: $blue;
+  background-color: white;
+}
+
+@mixin tabcontent{
+  display: block;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 30px 15px 30px;
+  font-size: 1.3rem;
 }
