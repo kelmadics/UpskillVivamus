@@ -1,0 +1,125 @@
+html{
+  body{
+    font-size: 100%;
+    main{
+
+      #maincontainerone{
+        text-align: center;
+        color: $blue;
+        padding: 30px;
+
+        h1{
+          font-size: 3.3rem;
+          font-weight: 600;
+          padding-bottom: 10px;
+        }
+        h2{
+          font-size: 2.2rem;
+          padding-bottom:0px;
+        }
+        h3{
+          font-size: 2rem;
+        }
+
+      }
+
+      #line{
+
+        border-top: 4px solid $lightgrey;
+        margin: 0 auto 40px auto;
+        width: 65%;
+      }
+
+      #maincontainertwo{
+        position: relative;
+        text-align: center;
+        font-size: 2.5rem;
+        color: $blue;
+        width: 60%;
+        margin: 0 auto 40px auto;
+
+        #innercontainer{
+          position: relative;
+
+          .step{
+            background-color: white;
+            display: inline-block;
+            padding-top: 10px;
+            height: 50px;
+            width: 60px;
+            border-radius: 60px;
+            border: 10px solid $grey;
+          }
+          .step.one{
+            float: left;
+          }
+
+
+          .step.three{
+            float: right;
+          }
+
+        }
+
+        #stepline{
+          clear: both;
+          display: block;
+          height: 10px;
+          width: 100%;
+          background-color: $grey;
+          vertical-align: middle;
+          position: absolute;
+          top: 35px;
+          z-index: -1;
+        }
+      }
+
+      section{
+        #formone{
+          @include formformat();
+
+          #innercontainertwo {
+            font-size: 1rem;
+
+            #inputboxname{
+              margin: 0 0 0 20px;
+
+
+
+
+              #firstname{
+                @include inputbox();
+                width: 30%;
+              }
+              #lastname{
+                @include inputbox();
+                width: 30%;
+
+              }
+              #email{
+                @include inputbox();
+                clear: both;
+                width: 95%;
+              }
+              #mobilenumber{
+                @include inputbox();
+                width: 95%;
+              }
+
+            }
+
+
+          }
+        }
+
+
+
+        #formtwo{
+
+          @include formformat();
+        }
+      }
+
+    }
+  }
+}
