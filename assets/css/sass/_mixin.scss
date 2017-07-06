@@ -50,7 +50,14 @@
   border: transparent;
   border-radius: 10px;
   cursor: pointer;
+}
 
+@mixin activemodifier {
+
+  &.active{
+    background: $blue;
+    color: white;
+  }
 
 
 }

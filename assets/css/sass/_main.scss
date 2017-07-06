@@ -1,6 +1,11 @@
 html{
   body{
     font-size: 100%;
+    :focus{
+      outline: none;
+    }
+
+
     main{
 
       #maincontainerone{
@@ -49,9 +54,13 @@ html{
             width: 60px;
             border-radius: 60px;
             border: 10px solid $grey;
-          }
-          .step.one{
-            float: left;
+            cursor: default;
+
+            @include activemodifier();
+
+            &.one{
+              float: left;
+            }
           }
 
 
@@ -75,194 +84,208 @@ html{
       }
 
       section{
-        #sectionone{
-          @include formformat();
-          #formone{
-            margin-top: 10px;
-            padding: 10px;
-            font-size: 1rem;
-
-
-            #boxone{
-              float: left;
-
-              #firstname{
-                @include inputbox();
-              }
-            }
-            #boxtwo{
-              float: right;
-
-              #lastname{
-                @include inputbox();
-              }
-            }
-            #boxthree{
-              clear: both;
-
-              #email{
-                @include inputbox();
-                width: 96%;
-              }
-              #number{
-                @include inputbox();
-                width: 96%;
-
-              }
-            }
-            .boxname{
-              text-indent: 10px;
-              font-size: 1.1rem;
-            }
-          }
-        }
-        #sectiontwo{
-          @include formformat();
-          #formtwo{
-            margin-top: 30px;
-            padding: 10px 20px 10px 20px;
-            font-size: 1rem;
-
-
-            #tabmenu{
-              text-align: center;
-
-              #paypal{
-                @include tabbtn();
-                float: left;
-                background-color: $blue;  /*TEMPORARY: UNTIL JAVA SCRIPT/JQUERY*/
-                color: white;             /*TEMPORARY: UNTIL JAVA SCRIPT/JQUERY*/
-              }
-              #creditcard{
-                @include tabbtn();
-                float: right;
-              }
-            }
-            #tabcontentcreditcard{
-              @include tabcontent();
-              clear: both;
-              position: relative;
-
-              #visalogo{
-                position: absolute;
-                right: 20px;
-                bottom: 20px;
-                background-repeat: no-repeat;
-                height: 70px;
-                width: auto;
-              }
-
-              .tabinputname{
-                text-indent: 10px;
-              }
-
-              #amount{
-                @include inputbox();
-                background-color: $lightgrey;
-
-              }
-              #holdername{
-                @include inputbox();
-                background-color: $lightgrey;
-                width: 97%;
-
-              }
-              #cardnum{
-                @include inputbox();
-                background-color: $lightgrey;
-                width: 97%;
-
-              }
-              #cardcode{
-                @include inputbox();
-                background-color: $lightgrey;
-
-              }
-              #expiry{
-                @include inputbox();
-                background-color: $lightgrey;
-
-              }
-
-
-
-            }
-
-            #tabcontentpaypal{
-              @include tabcontent();
-              clear: both;
-              position: relative;
-              background-color: black;
-
-              #paypallogo{
-                position: absolute;
-                right: 25px;
-                bottom: 20px;
-                background-repeat: no-repeat;
-                height: 60px;
-                width: auto;
-              }
-
-              .tabinputname{
-                text-indent: 10px;
-              }
-
-              #paypalemail{
-                @include inputbox();
-                background-color: $lightgrey;
-
-              }
-              #paypalpassword{
-                @include inputbox();
-                background-color: $lightgrey;
-
-
-              }
-            }
-
-          }
-        }
-        #sectionthree{
-          #formthree{
+        #container1{
+          #sectionone{
             @include formformat();
-
-            #commentboxname{
-              margin-top: 30px;
-              text-indent: 10px;
-              font-size: 1.3rem;
-            }
-            #commentfield{
-              background-color: white;
-              border-radius: 10px;
-              border: transparent;
-              padding: 20px;
-              width: 95%;
-              height: 200px;
-              margin: 5px auto 0 auto;
-              text-align: justify;
+            #formone{
+              margin-top: 10px;
+              padding: 10px;
               font-size: 1rem;
-            }
-            #checkboxcontainer{
-              font-size: 1.3rem;
-              vertical-align: middle;
-              position: relative;
-              text-indent: 10px;
 
-              #checkboxone{
-                margin-top: 20px;
-                text-indent: 20px;
+
+              #boxone{
+                float: left;
+
+                #firstname{
+                  @include inputbox();
+                }
+              }
+              #boxtwo{
+                float: right;
+
+                #lastname{
+                  @include inputbox();
+                }
+              }
+              #boxthree{
+                clear: both;
+
+                #email{
+                  @include inputbox();
+                  width: 96%;
+                }
+                #number{
+                  @include inputbox();
+                  width: 96%;
+
+                }
+              }
+              .boxname{
+                text-indent: 10px;
+                font-size: 1.1rem;
+              }
+            }
+          }
+
+        }
+        #container2{
+          display: none;
+          #sectiontwo{
+            @include formformat();
+            #formtwo{
+              margin-top: 30px;
+              padding: 10px 20px 10px 20px;
+              font-size: 1rem;
+
+
+              #tabmenu{
+                text-align: center;
+
+
+
+                #paypal{
+                  @include tabbtn();
+                  @include activemodifier();
+                  float: left;
+                }
+                #creditcard{
+                  @include tabbtn();
+                  @include activemodifier();
+                  float: right;
+
+                }
+              }
+              #tabcontentcreditcard{
+                @include tabcontent();
+                clear: both;
+                position: relative;
+
+                #visalogo{
+                  position: absolute;
+                  right: 20px;
+                  bottom: 20px;
+                  background-repeat: no-repeat;
+                  height: 70px;
+                  width: auto;
+                }
+
+                .tabinputname{
+                  text-indent: 10px;
+                }
+
+                #amount{
+                  @include inputbox();
+                  background-color: $lightgrey;
+
+                }
+                #holdername{
+                  @include inputbox();
+                  background-color: $lightgrey;
+                  width: 97%;
+
+                }
+                #cardnum{
+                  @include inputbox();
+                  background-color: $lightgrey;
+                  width: 97%;
+
+                }
+                #cardcode{
+                  @include inputbox();
+                  background-color: $lightgrey;
+
+                }
+                #expiry{
+                  @include inputbox();
+                  background-color: $lightgrey;
+
+                }
+
+
+
+              }
+              #tabcontentpaypal{
+                @include tabcontent();
+                clear: both;
+                position: relative;
+                display: none;
+
+                #paypallogo{
+                  position: absolute;
+                  right: 25px;
+                  bottom: 20px;
+                  background-repeat: no-repeat;
+                  height: 60px;
+                  width: auto;
+                }
+
+                .tabinputname{
+                  text-indent: 10px;
+                }
+
+                #paypalemail{
+                  @include inputbox();
+                  background-color: $lightgrey;
+
+                }
+                #paypalpassword{
+                  @include inputbox();
+                  background-color: $lightgrey;
+
+
+                }
+              }
+
+            }
+          }
+
+        }
+        #container3{
+          display: none;
+          #sectionthree{
+            #formthree{
+              @include formformat();
+
+              #commentboxname{
+                margin-top: 30px;
+                text-indent: 10px;
+                font-size: 1.3rem;
+              }
+              #commentfield{
+                background-color: white;
+                border-radius: 10px;
+                border: transparent;
+                padding: 20px;
+                width: 95%;
+                height: 200px;
+                margin: 5px auto 0 auto;
+                text-align: justify;
+                font-size: 1rem;
+              }
+              #checkboxcontainer{
+                font-size: 1.3rem;
+                vertical-align: middle;
+                position: relative;
+                text-indent: 10px;
+
+                #checkboxone{
+                  margin-top: 20px;
+                  text-indent: 20px;
+                }
+
+
               }
 
 
             }
 
-
           }
 
         }
+
       }
 
-      #buttonarea{
+      .buttonarea{
 
 
         position: relative;
@@ -272,15 +295,26 @@ html{
         color: white;
         text-align: center;
 
-        #btn1{
-          @include button();
-          margin-right: 22%;
 
-
-        }
         #btn2{
           @include button();
-          margin-left: 22% ;
+          margin-left: 71%;
+        }
+        #btn3{
+          @include button();
+          margin-right: 18%;
+        }
+        #btn4{
+          @include button();
+          margin-left: 18%;
+        }
+        #btn5{
+          @include button();
+          margin-right: 18%;
+        }
+        #btn6{
+          @include button();
+          margin-left: 18%;
         }
 
     }
