@@ -1,8 +1,11 @@
 html{
   body{
     footer{
+      clear: both;
       background-color: $grey;
       padding: 20px;
+      margin-top: 130px;
+
 
       #ftrcontainerone{
         text-align: center;

@@ -42,6 +42,47 @@ html{
         background-position: right;
 
       }
+      #menucontainer{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        text-align: left;
+        @include displaymode();
+
+        #burgericon{
+          float: right;
+          cursor: pointer;
+
+
+
+          }
+
+
+
+          .bar{
+            width: 50px;
+            height: 10px;
+            background-color: white;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+
+        }
+
+        #burgermenu{
+          color: white;
+          display: inline-block;
+          background-color: black;
+          @include displaymode();
+
+          .brgrmenu{
+            text-align: center;
+            font-size: 2rem;
+            border: 1px solid yellow;
+          }
+        }
+      }
+
 
     }
   }

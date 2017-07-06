@@ -127,9 +127,16 @@ html{
             }
           }
 
+          #btn2{
+            @include button();
+            float: right;
+          }
+
         }
         #container2{
-          display: none;
+          @include displaymode();
+          clear: both;
+
           #sectiontwo{
             @include formformat();
             #formtwo{
@@ -208,7 +215,7 @@ html{
                 @include tabcontent();
                 clear: both;
                 position: relative;
-                display: none;
+                @include displaymode();
 
                 #paypallogo{
                   position: absolute;
@@ -238,10 +245,21 @@ html{
 
             }
           }
-
+          #btn3{
+            @include button();
+            /*margin-right: 100px;*/
+            float: left;
+          }
+          #btn4{
+            @include button();
+            /*margin-left: 50px;*/
+            float: right;
+          }
         }
         #container3{
-          display: none;
+          @include displaymode();
+          clear: both;
+
           #sectionthree{
             #formthree{
               @include formformat();
@@ -281,47 +299,32 @@ html{
 
           }
 
-        }
+          #btn5{
+            @include button();
+            float: left;
+          }
+          #btn6{
+            @include button();
+            float: right;
+          }
 
+        }
       }
 
       .buttonarea{
-
-
         position: relative;
         margin: 0 20% 30px 20%;
-
         font-size: 2rem;
         color: white;
         text-align: center;
 
 
-        #btn2{
-          @include button();
-          margin-left: 71%;
-        }
-        #btn3{
-          @include button();
-          margin-right: 18%;
-        }
-        #btn4{
-          @include button();
-          margin-left: 18%;
-        }
-        #btn5{
-          @include button();
-          margin-right: 18%;
-        }
-        #btn6{
-          @include button();
-          margin-left: 18%;
-        }
 
-    }
 
 
 
 
+    }
     }
   }
 }

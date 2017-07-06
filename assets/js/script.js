@@ -121,3 +121,18 @@ $(".three").click(function () {
     $("h2").text("Vestibulum bibendum posuere dui, in pharetra est hendrerit ac.");
     $("h3").show();
 });
+
+$(document).ready(function () {
+    if($(window).width() <= 768){
+
+        $(".item").remove();
+        $("#menucontainer").show();
+    }
+});
+
+$("#burgericon").click(function () {
+    event.preventDefault();
+    $("#burgermenu").fadeToggle();
+
+})
+

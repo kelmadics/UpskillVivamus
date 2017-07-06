@@ -1,0 +1,338 @@
+@media only screen and (max-width: 1024px){
+html{
+  body{
+    header{
+      .headerelement{
+        margin: 30px 10px 30px 10px;
+
+        #vivamus{
+          height: 100px;
+        }
+
+        .item{
+          font-size: 1.8rem;
+        }
+      }
+      #searchbox{
+        width: 100%;
+      }
+    }
+    main{
+      #maincontainerone{
+
+        h1{
+          font-size: 2.8rem;
+        }
+        h2{
+          font-size: 1.8rem;
+        }
+        h3{
+          font-size: 1.8rem;
+        }
+
+
+      }
+      #maincontainertwo{
+        #stepline{
+          top: 29px;
+        }
+
+        #innercontainer{
+          .step{
+            height: 40px;
+            width: 50px;
+            border: 8px solid $grey;
+            font-size: 2.3rem;
+          }
+
+        }
+
+
+        }
+      section{
+        #container1{
+          #btn2{
+            height: 60px;
+            width: 240px;
+          }
+          #sectionone{
+            #formone{
+              #boxone{
+                #firstname{
+                  width: 200px;
+                  margin-left: 0px ;
+                }
+              }
+              #boxtwo{
+                #lastname{
+                  width: 200px;
+                  margin-left: 10px;
+                  margin-right: 0px;
+
+                }
+              }
+            }
+          }
+        }
+        #container2{
+
+          #btn3{
+            height: 60px;
+            width: 240px;
+          }
+          #btn4{
+            height: 60px;
+            width: 240px;
+          }
+          #sectiontwo{
+           #formtwo{
+             padding-left: 10px;
+             padding-right: 10px;
+             margin-top: 20px;
+
+             .tabinputname{
+               font-size: 1.1rem;
+             }
+             #tabcontentpaypal{
+               #paypallogo{
+                 height: 45px;
+               }
+               #paypalemail{
+                 width: 50%;
+               }
+               #paypalpassword{
+                 width: 50%;
+               }
+
+             }
+             #tabcontentcreditcard{
+               #amount{
+                 width: 50%;
+               }
+               #expiry{
+                 width: 50%;
+               }
+               #cardcode{
+                 width: 50%;
+               }
+               #visalogo{
+                 height: 50px;
+               }
+
+             }
+
+
+             #tabmenu{
+               #paypal{
+                 height: 45px;
+                 font-size: 1.8rem;
+               }
+               #creditcard{
+                 height: 45px;
+                 font-size: 1.8rem;
+
+
+               }
+             }
+           }
+          }
+
+
+        }
+        #container3{
+          #btn5{
+            height: 60px;
+            width: 240px;
+
+          }
+          #btn6{
+            height: 60px;
+            width: 240px;
+
+          }
+
+          #sectionthree{
+            #formthree{
+              #checkboxcontainer{
+                font-size: 1.1rem;
+              }
+              #commentboxname{
+                font-size: 1.1rem;
+              }
+              #commentfield{
+                width: 92%;
+              }
+            }
+          }
+        }
+
+      }
+    }
+    footer{
+      #ftrcontainerone{
+        .circleelement{
+          height: 50px;
+          width: 50px;
+          border-radius: 50px;
+        }
+      }
+
+    }
+  }
+}
+
+
+}/*DONE*/
+@media only screen and (max-width: 960px) {
+  html{
+    body{
+      header{
+        #searchbox{
+          width: 85%;
+          height: 30px;
+          background-size: 28px;
+        }
+        .headerelement{
+          #vivamus{
+            height: 90px;
+          }
+          .item{
+            font-size: 1.7rem;
+          }
+        }
+
+
+
+      }
+      main{
+        section{
+          #container2{
+            #sectiontwo{
+              #formtwo{
+                #tabcontentpaypal{
+                  #paypallogo{
+                    height: 40px;
+                  }
+                }
+              }
+            }
+          }
+          #container1{
+            #sectionone{
+              #formone{
+                #boxone{
+                  #firstname{
+                    width: 185px;
+                  }
+                }
+                #boxtwo{
+                  #lastname{
+                    width: 185px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        #maincontainerone{
+          h1{
+            font-size: 2.6rem;
+          }
+          h2{
+            font-size: 1.7rem;
+          }
+          h3{
+            font-size: 1.7rem;
+          }
+        }
+
+      }
+      footer{
+
+      }
+    }
+  }
+
+}/*DONE*/
+@media only screen and (max-width: 768px) {
+  html{
+    body{
+      header{
+
+      }
+      main{
+
+        section{
+          #container1{
+            #btn2{
+              margin-right: -68px;
+            }
+            #sectionone{
+              margin: 0 10% 30px 10%;
+            }
+
+          }
+          #container2{
+            #btn3{
+              margin-left: -68px;
+            }
+            #btn4{
+              margin-right: -68px;
+            }
+            #sectiontwo{
+              margin: 0 10% 30px 10%;
+
+            }
+          }
+          #container3{
+            #btn5{
+              margin-left: -68px;
+            }
+            #btn6{
+              margin-right: -68px;
+            }
+            #sectionthree{
+              #formthree{
+                margin: 0 10% 30px 10%;
+              }
+
+
+            }
+          }
+        }
+        #line{
+          width: 78%;
+        }
+        #maincontainerone{
+          h1{
+            font-size: 2rem;
+          }
+          h2{
+            font-size: 1.3rem;
+          }
+          h3{
+            font-size: 1.3rem;
+          }
+        }
+        #maincontainertwo{
+          width: 78%;
+        }
+
+      }
+      footer{
+        #ftrcontainertwo{
+          font-size: 1.3rem;
+        }
+
+      }
+    }
+  }
+
+}/*HAMBURGER MENU: STARTS TO EXIST*/
+@media only screen and (max-width: 480px) {
+
+}
+@media only screen and (max-width: 320px) {
+
+}
