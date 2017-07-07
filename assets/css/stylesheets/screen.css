@@ -81,29 +81,31 @@ html body main #maincontainerone {
   text-align: center;
   color: #2DA8C9;
   padding: 30px;
+  user-select: none;
+  cursor: default;
 }
-/* line 16, ../sass/_main.scss */
+/* line 18, ../sass/_main.scss */
 html body main #maincontainerone h1 {
   font-size: 3.3rem;
   font-weight: 600;
   padding-bottom: 10px;
 }
-/* line 21, ../sass/_main.scss */
+/* line 23, ../sass/_main.scss */
 html body main #maincontainerone h2 {
   font-size: 2.2rem;
   padding-bottom: 0px;
 }
-/* line 25, ../sass/_main.scss */
+/* line 27, ../sass/_main.scss */
 html body main #maincontainerone h3 {
   font-size: 2rem;
 }
-/* line 31, ../sass/_main.scss */
+/* line 33, ../sass/_main.scss */
 html body main #line {
   border-top: 4px solid #EBEBEB;
   margin: 0 auto 40px auto;
   width: 65%;
 }
-/* line 38, ../sass/_main.scss */
+/* line 40, ../sass/_main.scss */
 html body main #maincontainertwo {
   position: relative;
   text-align: center;
@@ -112,11 +114,11 @@ html body main #maincontainertwo {
   width: 60%;
   margin: 0 auto 40px auto;
 }
-/* line 46, ../sass/_main.scss */
+/* line 48, ../sass/_main.scss */
 html body main #maincontainertwo #innercontainer {
   position: relative;
 }
-/* line 49, ../sass/_main.scss */
+/* line 51, ../sass/_main.scss */
 html body main #maincontainertwo #innercontainer .step {
   background-color: white;
   display: inline-block;
@@ -126,21 +128,22 @@ html body main #maincontainertwo #innercontainer .step {
   border-radius: 60px;
   border: 10px solid #BEBEBE;
   cursor: default;
+  user-select: none;
 }
 /* line 58, ../sass/_mixin.scss */
 html body main #maincontainertwo #innercontainer .step.active {
   background: #2DA8C9;
   color: white;
 }
-/* line 61, ../sass/_main.scss */
+/* line 65, ../sass/_main.scss */
 html body main #maincontainertwo #innercontainer .step.one {
   float: left;
 }
-/* line 67, ../sass/_main.scss */
+/* line 71, ../sass/_main.scss */
 html body main #maincontainertwo #innercontainer .step.three {
   float: right;
 }
-/* line 73, ../sass/_main.scss */
+/* line 77, ../sass/_main.scss */
 html body main #maincontainertwo #stepline {
   clear: both;
   display: block;
@@ -152,7 +155,7 @@ html body main #maincontainertwo #stepline {
   top: 35px;
   z-index: -1;
 }
-/* line 88, ../sass/_main.scss */
+/* line 92, ../sass/_main.scss */
 html body main section #container1 #sectionone {
   position: relative;
   margin: 0 20% 30px 20%;
@@ -163,17 +166,17 @@ html body main section #container1 #sectionone {
   color: #2DA8C9;
   font-size: 2rem;
 }
-/* line 90, ../sass/_main.scss */
+/* line 94, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone {
   margin-top: 10px;
   padding: 10px;
   font-size: 1rem;
 }
-/* line 96, ../sass/_main.scss */
+/* line 100, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone #boxone {
   float: left;
 }
-/* line 99, ../sass/_main.scss */
+/* line 103, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone #boxone #firstname {
   border-radius: 10px;
   border: transparent;
@@ -183,11 +186,11 @@ html body main section #container1 #sectionone #formone #boxone #firstname {
   margin: 5px 10px 10px 0;
   display: block;
 }
-/* line 103, ../sass/_main.scss */
+/* line 107, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone #boxtwo {
   float: right;
 }
-/* line 106, ../sass/_main.scss */
+/* line 110, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone #boxtwo #lastname {
   border-radius: 10px;
   border: transparent;
@@ -197,11 +200,11 @@ html body main section #container1 #sectionone #formone #boxtwo #lastname {
   margin: 5px 10px 10px 0;
   display: block;
 }
-/* line 110, ../sass/_main.scss */
+/* line 114, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone #boxthree {
   clear: both;
 }
-/* line 113, ../sass/_main.scss */
+/* line 117, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone #boxthree #email {
   border-radius: 10px;
   border: transparent;
@@ -212,7 +215,7 @@ html body main section #container1 #sectionone #formone #boxthree #email {
   display: block;
   width: 96%;
 }
-/* line 117, ../sass/_main.scss */
+/* line 121, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone #boxthree #number {
   border-radius: 10px;
   border: transparent;
@@ -223,12 +226,12 @@ html body main section #container1 #sectionone #formone #boxthree #number {
   display: block;
   width: 96%;
 }
-/* line 123, ../sass/_main.scss */
+/* line 127, ../sass/_main.scss */
 html body main section #container1 #sectionone #formone .boxname {
   text-indent: 10px;
   font-size: 1.1rem;
 }
-/* line 130, ../sass/_main.scss */
+/* line 134, ../sass/_main.scss */
 html body main section #container1 #btn2 {
   display: inline-block;
   font-size: 2rem;
@@ -242,14 +245,14 @@ html body main section #container1 #btn2 {
   margin-bottom: 30px;
   float: right;
 }
-/* line 136, ../sass/_main.scss */
+/* line 140, ../sass/_main.scss */
 html body main section #container2 {
   /*SHOW: BLOCK ,
    HIDE: NONE*/
   display: none;
   clear: both;
 }
-/* line 140, ../sass/_main.scss */
+/* line 144, ../sass/_main.scss */
 html body main section #container2 #sectiontwo {
   position: relative;
   margin: 0 20% 30px 20%;
@@ -260,17 +263,17 @@ html body main section #container2 #sectiontwo {
   color: #2DA8C9;
   font-size: 2rem;
 }
-/* line 142, ../sass/_main.scss */
+/* line 146, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo {
   margin-top: 30px;
   padding: 10px 20px 10px 20px;
   font-size: 1rem;
 }
-/* line 148, ../sass/_main.scss */
+/* line 152, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabmenu {
   text-align: center;
 }
-/* line 153, ../sass/_main.scss */
+/* line 157, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabmenu #paypal {
   display: inline-block;
   height: 50px;
@@ -288,7 +291,7 @@ html body main section #container2 #sectiontwo #formtwo #tabmenu #paypal.active 
   background: #2DA8C9;
   color: white;
 }
-/* line 158, ../sass/_main.scss */
+/* line 162, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabmenu #creditcard {
   display: inline-block;
   height: 50px;
@@ -306,7 +309,7 @@ html body main section #container2 #sectiontwo #formtwo #tabmenu #creditcard.act
   background: #2DA8C9;
   color: white;
 }
-/* line 165, ../sass/_main.scss */
+/* line 169, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard {
   display: block;
   background-color: white;
@@ -316,7 +319,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard {
   clear: both;
   position: relative;
 }
-/* line 170, ../sass/_main.scss */
+/* line 174, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #visalogo {
   position: absolute;
   right: 20px;
@@ -324,12 +327,13 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #v
   background-repeat: no-repeat;
   height: 70px;
   width: auto;
+  user-select: none;
 }
-/* line 179, ../sass/_main.scss */
+/* line 184, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard .tabinputname {
   text-indent: 10px;
 }
-/* line 183, ../sass/_main.scss */
+/* line 188, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #amount {
   border-radius: 10px;
   border: transparent;
@@ -340,7 +344,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #a
   display: block;
   background-color: #EBEBEB;
 }
-/* line 188, ../sass/_main.scss */
+/* line 193, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #holdername {
   border-radius: 10px;
   border: transparent;
@@ -352,7 +356,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #h
   background-color: #EBEBEB;
   width: 97%;
 }
-/* line 194, ../sass/_main.scss */
+/* line 199, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #cardnum {
   border-radius: 10px;
   border: transparent;
@@ -364,7 +368,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #c
   background-color: #EBEBEB;
   width: 97%;
 }
-/* line 200, ../sass/_main.scss */
+/* line 205, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #cardcode {
   border-radius: 10px;
   border: transparent;
@@ -375,7 +379,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #c
   display: block;
   background-color: #EBEBEB;
 }
-/* line 205, ../sass/_main.scss */
+/* line 210, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #expiry {
   border-radius: 10px;
   border: transparent;
@@ -386,7 +390,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentcreditcard #e
   display: block;
   background-color: #EBEBEB;
 }
-/* line 214, ../sass/_main.scss */
+/* line 219, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal {
   display: block;
   background-color: white;
@@ -399,7 +403,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal {
    HIDE: NONE*/
   display: none;
 }
-/* line 220, ../sass/_main.scss */
+/* line 225, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal #paypallogo {
   position: absolute;
   right: 25px;
@@ -408,11 +412,11 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal #paypa
   height: 60px;
   width: auto;
 }
-/* line 229, ../sass/_main.scss */
+/* line 234, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal .tabinputname {
   text-indent: 10px;
 }
-/* line 233, ../sass/_main.scss */
+/* line 238, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal #paypalemail {
   border-radius: 10px;
   border: transparent;
@@ -423,7 +427,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal #paypa
   display: block;
   background-color: #EBEBEB;
 }
-/* line 238, ../sass/_main.scss */
+/* line 243, ../sass/_main.scss */
 html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal #paypalpassword {
   border-radius: 10px;
   border: transparent;
@@ -434,7 +438,7 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal #paypa
   display: block;
   background-color: #EBEBEB;
 }
-/* line 248, ../sass/_main.scss */
+/* line 253, ../sass/_main.scss */
 html body main section #container2 #btn3 {
   display: inline-block;
   font-size: 2rem;
@@ -449,7 +453,7 @@ html body main section #container2 #btn3 {
   /*margin-right: 100px;*/
   float: left;
 }
-/* line 253, ../sass/_main.scss */
+/* line 258, ../sass/_main.scss */
 html body main section #container2 #btn4 {
   display: inline-block;
   font-size: 2rem;
@@ -464,14 +468,14 @@ html body main section #container2 #btn4 {
   /*margin-left: 50px;*/
   float: right;
 }
-/* line 259, ../sass/_main.scss */
+/* line 264, ../sass/_main.scss */
 html body main section #container3 {
   /*SHOW: BLOCK ,
    HIDE: NONE*/
   display: none;
   clear: both;
 }
-/* line 264, ../sass/_main.scss */
+/* line 269, ../sass/_main.scss */
 html body main section #container3 #sectionthree #formthree {
   position: relative;
   margin: 0 20% 30px 20%;
@@ -482,13 +486,13 @@ html body main section #container3 #sectionthree #formthree {
   color: #2DA8C9;
   font-size: 2rem;
 }
-/* line 267, ../sass/_main.scss */
+/* line 272, ../sass/_main.scss */
 html body main section #container3 #sectionthree #formthree #commentboxname {
   margin-top: 30px;
   text-indent: 10px;
   font-size: 1.3rem;
 }
-/* line 272, ../sass/_main.scss */
+/* line 277, ../sass/_main.scss */
 html body main section #container3 #sectionthree #formthree #commentfield {
   background-color: white;
   border-radius: 10px;
@@ -500,19 +504,19 @@ html body main section #container3 #sectionthree #formthree #commentfield {
   text-align: justify;
   font-size: 1rem;
 }
-/* line 283, ../sass/_main.scss */
+/* line 288, ../sass/_main.scss */
 html body main section #container3 #sectionthree #formthree #checkboxcontainer {
   font-size: 1.3rem;
   vertical-align: middle;
   position: relative;
   text-indent: 10px;
 }
-/* line 289, ../sass/_main.scss */
+/* line 294, ../sass/_main.scss */
 html body main section #container3 #sectionthree #formthree #checkboxcontainer #checkboxone {
   margin-top: 20px;
   text-indent: 20px;
 }
-/* line 302, ../sass/_main.scss */
+/* line 307, ../sass/_main.scss */
 html body main section #container3 #btn5 {
   display: inline-block;
   font-size: 2rem;
@@ -526,7 +530,7 @@ html body main section #container3 #btn5 {
   margin-bottom: 30px;
   float: left;
 }
-/* line 306, ../sass/_main.scss */
+/* line 311, ../sass/_main.scss */
 html body main section #container3 #btn6 {
   display: inline-block;
   font-size: 2rem;
@@ -540,7 +544,7 @@ html body main section #container3 #btn6 {
   margin-bottom: 30px;
   float: right;
 }
-/* line 314, ../sass/_main.scss */
+/* line 319, ../sass/_main.scss */
 html body main .buttonarea {
   position: relative;
   margin: 0 20% 30px 20%;
@@ -591,16 +595,12 @@ html body header #searchbox {
   background-repeat: no-repeat;
   background-position: right;
 }
-/* line 46, ../sass/_header.scss */
-html body header .burgercontainer {
-  width: 50px;
-}
-/* line 48, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 html body header .burgercontainer #burgericon {
   float: right;
   cursor: pointer;
 }
-/* line 55, ../sass/_header.scss */
+/* line 54, ../sass/_header.scss */
 html body header .burgercontainer .bar {
   width: 50px;
   height: 10px;
@@ -608,23 +608,37 @@ html body header .burgercontainer .bar {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 64, ../sass/_header.scss */
+/* line 63, ../sass/_header.scss */
 html body header .burgercontainer #burgermenu {
   clear: right;
   color: white;
   display: inline-block;
-  background-color: black;
+  background-color: #BEBEBE;
+  float: right;
+  position: absolute;
+  right: -150px;
+  top: 60px;
+  z-index: 1;
+  border-radius: 10px 0 10px 10px;
   /*SHOW: BLOCK ,
    HIDE: NONE*/
   display: none;
 }
-/* line 71, ../sass/_header.scss */
+/* line 81, ../sass/_header.scss */
 html body header .burgercontainer #burgermenu .menucontainer {
   display: block;
-  border: 1px solid #2DA8C9;
   font-size: 2rem;
   padding: 10px;
   width: auto;
+  cursor: default;
+}
+/* line 82, ../sass/_header.scss */
+html body header .burgercontainer #burgermenu .menucontainer :hover {
+  color: #2DA8C9;
+}
+/* line 101, ../sass/_header.scss */
+html body header .burgercontainer #burgermenu .menucontainer.db {
+  border-radius: 0 0 10px 10px;
 }
 
 /* line 3, ../sass/_footer.scss */
@@ -850,59 +864,95 @@ html body footer #ftrcontainerthree {
 }
 /*DONE*/
 @media only screen and (max-width: 768px) {
-  /* line 268, ../sass/_mobileresponsive.scss */
+  /* line 263, ../sass/_mobileresponsive.scss */
+  html body header .burgercontainer #burgericon {
+    margin-right: 0;
+    position: relative;
+    right: -150px;
+  }
+  /* line 271, ../sass/_mobileresponsive.scss */
+  html body header .headerelement {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /* line 276, ../sass/_mobileresponsive.scss */
+  html body header .headerelement #vivamus {
+    margin-left: 0;
+    position: relative;
+    left: -150px;
+  }
+  /* line 281, ../sass/_mobileresponsive.scss */
+  html body header .headerelement #searchbox {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    right: -125px;
+  }
+  /* line 296, ../sass/_mobileresponsive.scss */
+  html body main #maincontainerone h1 {
+    font-size: 2.2rem;
+  }
+  /* line 299, ../sass/_mobileresponsive.scss */
+  html body main #maincontainerone h2 {
+    font-size: 1.4rem;
+  }
+  /* line 302, ../sass/_mobileresponsive.scss */
+  html body main #maincontainerone h3 {
+    font-size: 1.4rem;
+  }
+  /* line 309, ../sass/_mobileresponsive.scss */
   html body main section #container1 #btn2 {
     margin-right: -68px;
   }
-  /* line 271, ../sass/_mobileresponsive.scss */
+  /* line 312, ../sass/_mobileresponsive.scss */
   html body main section #container1 #sectionone {
     margin: 0 10% 30px 10%;
   }
-  /* line 277, ../sass/_mobileresponsive.scss */
+  /* line 318, ../sass/_mobileresponsive.scss */
   html body main section #container2 #btn3 {
     margin-left: -68px;
   }
-  /* line 280, ../sass/_mobileresponsive.scss */
+  /* line 321, ../sass/_mobileresponsive.scss */
   html body main section #container2 #btn4 {
     margin-right: -68px;
   }
-  /* line 283, ../sass/_mobileresponsive.scss */
+  /* line 324, ../sass/_mobileresponsive.scss */
   html body main section #container2 #sectiontwo {
     margin: 0 10% 30px 10%;
   }
-  /* line 289, ../sass/_mobileresponsive.scss */
+  /* line 330, ../sass/_mobileresponsive.scss */
   html body main section #container3 #btn5 {
     margin-left: -68px;
   }
-  /* line 292, ../sass/_mobileresponsive.scss */
+  /* line 333, ../sass/_mobileresponsive.scss */
   html body main section #container3 #btn6 {
     margin-right: -68px;
   }
-  /* line 296, ../sass/_mobileresponsive.scss */
+  /* line 337, ../sass/_mobileresponsive.scss */
   html body main section #container3 #sectionthree #formthree {
     margin: 0 10% 30px 10%;
   }
-  /* line 304, ../sass/_mobileresponsive.scss */
+  /* line 345, ../sass/_mobileresponsive.scss */
   html body main #line {
     width: 78%;
   }
-  /* line 308, ../sass/_mobileresponsive.scss */
+  /* line 349, ../sass/_mobileresponsive.scss */
   html body main #maincontainerone h1 {
     font-size: 2rem;
   }
-  /* line 311, ../sass/_mobileresponsive.scss */
+  /* line 352, ../sass/_mobileresponsive.scss */
   html body main #maincontainerone h2 {
     font-size: 1.3rem;
   }
-  /* line 314, ../sass/_mobileresponsive.scss */
+  /* line 355, ../sass/_mobileresponsive.scss */
   html body main #maincontainerone h3 {
     font-size: 1.3rem;
   }
-  /* line 318, ../sass/_mobileresponsive.scss */
+  /* line 359, ../sass/_mobileresponsive.scss */
   html body main #maincontainertwo {
     width: 78%;
   }
-  /* line 324, ../sass/_mobileresponsive.scss */
+  /* line 365, ../sass/_mobileresponsive.scss */
   html body footer #ftrcontainertwo {
     font-size: 1.3rem;
   }

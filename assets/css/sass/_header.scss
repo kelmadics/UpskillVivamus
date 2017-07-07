@@ -44,7 +44,6 @@ html{
 
       }
       .burgercontainer{
-        width: 50px;
         #burgericon{
           float: right;
           cursor: pointer;
@@ -62,19 +61,47 @@ html{
         }
 
         #burgermenu{
+
+
           clear: right;
           color: white;
           display: inline-block;
-          background-color: black;
+          background-color: $grey;
+          float: right;
+          position: absolute;
+          right: -150px;
+          top: 60px;
+          z-index: 1;
+          border-radius: 10px 0 10px 10px;
           @include displaymode();
 
+
+
+
           .menucontainer{
+            :hover{
+
+              color: $blue;
+
+            }
+
             display: block;
-            border: 1px solid $blue;
             font-size: 2rem;
             padding: 10px;
             width: auto;
+            cursor: default;
+
+
+
+
           }
+
+
+
+          .menucontainer.db{
+            border-radius: 0 0 10px 10px;
+          }
+
 
 
         }
