@@ -244,6 +244,8 @@ html body main section #container1 #btn2 {
 }
 /* line 136, ../sass/_main.scss */
 html body main section #container2 {
+  /*SHOW: BLOCK ,
+   HIDE: NONE*/
   display: none;
   clear: both;
 }
@@ -393,6 +395,8 @@ html body main section #container2 #sectiontwo #formtwo #tabcontentpaypal {
   font-size: 1.3rem;
   clear: both;
   position: relative;
+  /*SHOW: BLOCK ,
+   HIDE: NONE*/
   display: none;
 }
 /* line 220, ../sass/_main.scss */
@@ -462,6 +466,8 @@ html body main section #container2 #btn4 {
 }
 /* line 259, ../sass/_main.scss */
 html body main section #container3 {
+  /*SHOW: BLOCK ,
+   HIDE: NONE*/
   display: none;
   clear: both;
 }
@@ -567,12 +573,12 @@ html body header .headerelement .item {
   display: inline-block;
   font-size: 2rem;
 }
-/* line 28, ../sass/_header.scss */
+/* line 27, ../sass/_header.scss */
 html body header .headerelement.menuitems {
   position: relative;
   top: 15px;
 }
-/* line 32, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 html body header #searchbox {
   font-size: 1rem;
   padding-left: 10px;
@@ -585,39 +591,40 @@ html body header #searchbox {
   background-repeat: no-repeat;
   background-position: right;
 }
-/* line 45, ../sass/_header.scss */
-html body header #menucontainer {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  text-align: left;
-  display: none;
+/* line 46, ../sass/_header.scss */
+html body header .burgercontainer {
+  width: 50px;
 }
-/* line 52, ../sass/_header.scss */
-html body header #menucontainer #burgericon {
+/* line 48, ../sass/_header.scss */
+html body header .burgercontainer #burgericon {
   float: right;
   cursor: pointer;
 }
-/* line 62, ../sass/_header.scss */
-html body header #menucontainer .bar {
+/* line 55, ../sass/_header.scss */
+html body header .burgercontainer .bar {
   width: 50px;
   height: 10px;
   background-color: white;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 72, ../sass/_header.scss */
-html body header #menucontainer #burgermenu {
+/* line 64, ../sass/_header.scss */
+html body header .burgercontainer #burgermenu {
+  clear: right;
   color: white;
   display: inline-block;
   background-color: black;
+  /*SHOW: BLOCK ,
+   HIDE: NONE*/
   display: none;
 }
-/* line 78, ../sass/_header.scss */
-html body header #menucontainer #burgermenu .brgrmenu {
-  text-align: center;
+/* line 71, ../sass/_header.scss */
+html body header .burgercontainer #burgermenu .menucontainer {
+  display: block;
+  border: 1px solid #2DA8C9;
   font-size: 2rem;
-  border: 1px solid yellow;
+  padding: 10px;
+  width: auto;
 }
 
 /* line 3, ../sass/_footer.scss */

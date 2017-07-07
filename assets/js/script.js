@@ -123,10 +123,26 @@ $(".three").click(function () {
 });
 
 $(document).ready(function () {
+    if($(window).width() <= 1366){
+
+        /* $(".item").remove();*/
+        $(".burgercontainer").hide();
+
+
+    }
+});
+
+$(document).ready(function () {
+
     if($(window).width() <= 768){
 
-        $(".item").remove();
-        $("#menucontainer").show();
+        $(".burgercontainer").show();
+        $(".a").prependTo(".ab");
+        $(".b").prependTo(".bb");
+        $(".c").prependTo(".cb");
+        $(".d").prependTo(".db");
+        $(".separator").remove();
+        $(".text").remove();
     }
 });
 
@@ -134,5 +150,5 @@ $("#burgericon").click(function () {
     event.preventDefault();
     $("#burgermenu").fadeToggle();
 
-})
+});
 
