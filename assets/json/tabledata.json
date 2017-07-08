@@ -1,0 +1,33 @@
+{
+  "charlesvillarosa@yahoo.com":{
+    "firstname": "charles",
+    "lastname": "villarosa",
+    "age":39,
+    "address": "cebu city",
+    "postalcode": 6000,
+    "gender": "male",
+    "civilstatus": "single"
+  },
+
+  "kimbellz@gmail.com":{
+    "firstname": "kim",
+    "lastname": "belleza",
+    "age":38,
+    "address": "Basak,cebu city",
+    "postalcode": 6000,
+    "gender": "female",
+    "civilstatus": "single"
+  },
+
+  "karenbellz@hotmail.com":{
+    "firstname": "karen",
+    "lastname": "belleza",
+    "age":39,
+    "address": "basak,cebu city",
+    "postalcode": 6000,
+    "gender": "female",
+    "civilstatus": "single"
+  }
+
+}
+

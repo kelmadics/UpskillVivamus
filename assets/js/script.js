@@ -130,6 +130,8 @@ $(document).ready(function () {
 
 
     }
+
+
 });
 
 $(document).ready(function () {
@@ -151,4 +153,11 @@ $("#burgericon").click(function () {
     $("#burgermenu").fadeToggle();
 
 });
+
+
+
+$(document).ready(function () {
+
+});
+
 

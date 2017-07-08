@@ -1,0 +1,61 @@
+<!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "ajax.txt", true);
+        xhttp.send();
+    }
+</script>
+
+</body>
+</html>
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<table id="info">
+    <tr style="text-align: center">
+
+        <th class="cell">Email</th>
+        <th class="cell">Firstname</th>
+        <th class="cell">Lastname</th>
+        <th class="cell">Age</th>
+        <th class="cell">Address</th>
+        <th class="cell">Postal Code</th>
+        <th class="cell">Gender</th>
+        <th class="cell">Civil Status</th>
+    </tr>
+</table>
+
+<button id="show" TYPE="button">Show-Data</button>
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+</body>
+</html>
+

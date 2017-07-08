@@ -65,7 +65,7 @@ html{
 
           clear: right;
           color: white;
-          display: inline-block;
+
           background-color: $grey;
           float: right;
           position: absolute;
@@ -74,6 +74,8 @@ html{
           z-index: 1;
           border-radius: 10px 0 10px 10px;
           @include displaymode();
+
+
 
 
 

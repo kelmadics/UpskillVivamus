@@ -612,7 +612,6 @@ html body header .burgercontainer .bar {
 html body header .burgercontainer #burgermenu {
   clear: right;
   color: white;
-  display: inline-block;
   background-color: #BEBEBE;
   float: right;
   position: absolute;
@@ -624,7 +623,7 @@ html body header .burgercontainer #burgermenu {
    HIDE: NONE*/
   display: none;
 }
-/* line 81, ../sass/_header.scss */
+/* line 83, ../sass/_header.scss */
 html body header .burgercontainer #burgermenu .menucontainer {
   display: block;
   font-size: 2rem;
@@ -632,11 +631,11 @@ html body header .burgercontainer #burgermenu .menucontainer {
   width: auto;
   cursor: default;
 }
-/* line 82, ../sass/_header.scss */
+/* line 84, ../sass/_header.scss */
 html body header .burgercontainer #burgermenu .menucontainer :hover {
   color: #2DA8C9;
 }
-/* line 101, ../sass/_header.scss */
+/* line 103, ../sass/_header.scss */
 html body header .burgercontainer #burgermenu .menucontainer.db {
   border-radius: 0 0 10px 10px;
 }
