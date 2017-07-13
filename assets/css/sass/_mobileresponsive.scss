@@ -1,9 +1,12 @@
+
 @media only screen and (max-width: 1024px){
 html{
   body{
     header{
       .headerelement{
         margin: 30px 10px 30px 10px;
+
+
 
         #vivamus{
           height: 100px;
@@ -260,18 +263,32 @@ html{
     body{
       header{
         .burgercontainer{
+          #burgermenu{
+
+            right: -150px;
+
+            &.separator{
+
+              display: none;
+            }
+
+          }
+
           #burgericon{
+            display: block;
             margin-right: 0;
             position: relative;
             right: -150px;
           }
         }
-
-
         .headerelement{
 
-            margin-right: 0;
+          margin-right: 0;
           margin-left: 0;
+
+
+
+
 
           #vivamus{
             margin-left: 0;
@@ -285,6 +302,10 @@ html{
           right: -125px;
         }
 
+        }
+
+        .headerelement.menuitems.text{
+          display: none;
         }
 
       }

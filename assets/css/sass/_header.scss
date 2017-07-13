@@ -18,9 +18,14 @@ html{
           height: 120px;
         }
         .item {
-          font-family: Garamond;
-          display: inline-block;
-          font-size: 2rem;
+           font-family: Garamond;
+           display: inline-block;
+           font-size: 2rem;
+          cursor: pointer;
+         }
+        :hover{
+
+          color: $grey;
         }
 
       }
@@ -47,6 +52,7 @@ html{
         #burgericon{
           float: right;
           cursor: pointer;
+          @include displaymode();
         }
 
 
@@ -69,7 +75,7 @@ html{
           background-color: $grey;
           float: right;
           position: absolute;
-          right: -150px;
+          right: 0;
           top: 60px;
           z-index: 1;
           border-radius: 10px 0 10px 10px;
@@ -81,22 +87,24 @@ html{
 
 
           .menucontainer{
-            :hover{
 
-              color: $blue;
+              font-family: Garamond;
+              font-size: 2rem;
 
-            }
 
             display: block;
             font-size: 2rem;
             padding: 10px;
             width: auto;
-            cursor: default;
-
-
-
+            cursor: pointer;
 
           }
+          :hover{
+
+            color: $blue;
+
+          }
+
 
 
 

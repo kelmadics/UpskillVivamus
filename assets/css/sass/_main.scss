@@ -156,12 +156,12 @@ html{
 
                 #paypal{
                   @include tabbtn();
-                  @include activemodifier();
+                  @include whiteactive();
                   float: left;
                 }
                 #creditcard{
                   @include tabbtn();
-                  @include activemodifier();
+                  @include whiteactive();
                   float: right;
 
                 }

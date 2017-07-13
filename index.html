@@ -15,7 +15,7 @@
             <div class="item b">Sollicitudin</div>
             <div class="item separator"> | </div>
             <div class="item c">Metus</div>
-            <div class="item separator"> | </div>
+        <div class="item separator"> | </div>
             <div class="item d">Egestas</div>
         </div>
         <div class="headerelement menuitems"><input id="searchbox" type="search"></div>
@@ -26,10 +26,10 @@
                 <div class="bar"></div>
             </div>
             <div id="burgermenu">
-                <div class="menucontainer ab"></div>
-                <div class="menucontainer bb"></div>
-                <div class="menucontainer cb"></div>
-                <div class="menucontainer db"></div>
+                <div class="menucontainer ab">Bibendum</div>
+                <div class="menucontainer bb">Sollicitudin</div>
+                <div class="menucontainer cb">Metus</div>
+                <div class="menucontainer db">Egestas</div>
             </div>
 
         </div>
@@ -55,55 +55,88 @@
         <section>
             <div id="container1">
                 <div id="sectionone">About You
-                    <div id="formone">
+                    <form id="formone"> <!--MAIN FORM: PAGE 1-->
                         <div id="boxone">
                             <p class="boxname">First Name*</p>
-                            <input id="firstname" type="text">
+
+                            <!--INPUT-->
+                            <input id="firstname" type="text" name="first">
+                            <!--INPUT-->
+
                         </div>
 
                         <div id="boxtwo">
                             <p class="boxname">Last Name*
-                            <input id="lastname" type="text">
+
+                                <!--INPUT-->
+                            <input id="lastname" type="text" name="last">
+                                <!--INPUT-->
                         </div>
 
                         <div id="boxthree">
                             <p class="boxname">Email Address*
-                            <input id="email" type="text">
+
+                                <!--INPUT-->
+                            <input id="email" type="text" name="emailadd">
+                                <!--INPUT-->
+
                             <p class="boxname">Mobile Number*
-                            <input id="number" type="text">
+
+                            <!--INPUT-->
+                            <input id="number" type="text" name="contact">
+                            <!--INPUT-->
                         </div>
-                        </div>
+                        </form>
                 </div>
                 <div class="buttonarea">
-                    <button id="btn2">Next</button>
+
+                    <!--FORM 1: NEXT BUTTON-->
+                    <button type="submit" id="btn2">Next</button>
+                    <!--FORM 1: NEXT BUTTON-->
+
                 </div>
             </div>
 
             <div id="container2">
                 <div id="sectiontwo">Your Donation
-                    <div id="formtwo">
+                    <form id="formtwo">
 
                         <div id="tabmenu">
-                            <button id="paypal" >Paypal</button>
-                            <button id="creditcard" class="active">Credit Card</button>
+                            <button id="paypal" class="">Paypal</button>
+                            <button id="creditcard" class="wactive">Credit Card</button>
                         </div>
 
                         <div id="tabcontentcreditcard">
 
                             <p class="tabinputname">Donation Amount*</p>
-                            <input id="amount" type="text">
+
+                            <!--INPUT-->
+                            <input id="amount" type="text" name="">
+                            <!--INPUT-->
 
                             <p class="tabinputname">Card Holder Name*</p>
+
+                            <!--INPUT-->
                             <input id="holdername" type="text">
+                            <!--INPUT-->
 
                             <p class="tabinputname">Credit Card No.*</p>
+
+                            <!--INPUT-->
                             <input id="cardnum" type="text">
+                            <!--INPUT-->
 
                             <p class="tabinputname">Card Security Code*</p>
+
+                            <!--INPUT-->
                             <input id="cardcode" type="text">
+                            <!--INPUT-->
 
                             <p class="tabinputname">Expiry Date*</p>
+
+                            <!--INPUT-->
                             <input id="expiry" type="text">
+                            <!--INPUT-->
 
                             <img id="visalogo" src="assets/img/visamastercard.png">
 
@@ -111,16 +144,22 @@
                         <div id="tabcontentpaypal">
 
                             <p class="tabinputname">Paypal Email Address*</p>
+
+                            <!--INPUT-->
                             <input id="paypalemail" type="text">
+                            <!--INPUT-->
 
                             <p class="tabinputname">Paypal Password*</p>
-                            <input id="paypalpassword" type="password">
+
+                            <!--INPUT-->
+                            <input type="password" id="paypalpassword" type="password">
+                            <!--INPUT-->
 
                             <img id="paypallogo" src="assets/img/paypal.png">
 
                         </div>
 
-                    </div>
+                    </form>
                 </div>
                 <div class="buttonarea">
                     <button id="btn3">Back</button>
@@ -130,7 +169,7 @@
 
             <div id="container3">
                 <div id="sectionthree">
-                    <div id="formthree">Comment Field
+                    <form id="formthree">Comment Field
 
                         <p id="commentboxname">Your Message</p>
                         <textarea id="commentfield" rows="10"></textarea>
@@ -138,7 +177,7 @@
                             <input id="checkboxone" type="checkbox" value="none" name="check" />Keep me anonymous
 
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="buttonarea">
                     <button id="btn5">Back</button>

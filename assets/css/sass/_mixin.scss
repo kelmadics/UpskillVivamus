@@ -27,8 +27,8 @@
   border: transparent;
   border-radius: 10px 10px 0 0;
   font-size: 2rem;
-  color: $blue;
-  background-color: white;
+  color: white;
+  background-color: $blue;
   cursor: pointer;
 }
 
@@ -58,6 +58,16 @@
   &.active{
     background: $blue;
     color: white;
+  }
+
+
+}
+
+@mixin whiteactive{
+
+  &.wactive{
+    background-color: white;
+    color: $blue;
   }
 
 

@@ -1,6 +1,7 @@
-/**
+/*
+/!**
  * Created by Le Charles de Villz on 08/07/2017.
- */
+ *!/
 
 $(document).ready(function(){
 
@@ -33,4 +34,6 @@ $(document).ready(function(){
            console.log("file not found")
        }
    })
-});
+});*/
+
+/*____________________________________________________________*/
